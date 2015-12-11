@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E15C54851C1B5713009868D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15C54841C1B5713009868D1 /* AppDelegate.swift */; };
+		E15C54871C1B5713009868D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15C54861C1B5713009868D1 /* ViewController.swift */; };
+		E15C548A1C1B5713009868D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E15C54881C1B5713009868D1 /* Main.storyboard */; };
+		E15C548C1C1B5713009868D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E15C548B1C1B5713009868D1 /* Assets.xcassets */; };
+		E15C548F1C1B5713009868D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E15C548D1C1B5713009868D1 /* LaunchScreen.storyboard */; };
+		E15C549A1C1B5713009868D1 /* BoneAngleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15C54991C1B5713009868D1 /* BoneAngleTests.swift */; };
+		E15C54A51C1B5713009868D1 /* BoneAngleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15C54A41C1B5713009868D1 /* BoneAngleUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E15C54961C1B5713009868D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E15C54791C1B5713009868D1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E15C54801C1B5713009868D1;
+			remoteInfo = BoneAngle;
+		};
+		E15C54A11C1B5713009868D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E15C54791C1B5713009868D1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E15C54801C1B5713009868D1;
+			remoteInfo = BoneAngle;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E15C54811C1B5713009868D1 /* BoneAngle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoneAngle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E15C54841C1B5713009868D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E15C54861C1B5713009868D1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E15C54891C1B5713009868D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E15C548B1C1B5713009868D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E15C548E1C1B5713009868D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E15C54901C1B5713009868D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E15C54951C1B5713009868D1 /* BoneAngleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoneAngleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E15C54991C1B5713009868D1 /* BoneAngleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoneAngleTests.swift; sourceTree = "<group>"; };
+		E15C549B1C1B5713009868D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E15C54A01C1B5713009868D1 /* BoneAngleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoneAngleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E15C54A41C1B5713009868D1 /* BoneAngleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoneAngleUITests.swift; sourceTree = "<group>"; };
+		E15C54A61C1B5713009868D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E15C547E1C1B5713009868D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E15C54921C1B5713009868D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E15C549D1C1B5713009868D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E15C54781C1B5713009868D1 = {
+			isa = PBXGroup;
+			children = (
+				E15C54831C1B5713009868D1 /* BoneAngle */,
+				E15C54981C1B5713009868D1 /* BoneAngleTests */,
+				E15C54A31C1B5713009868D1 /* BoneAngleUITests */,
+				E15C54821C1B5713009868D1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E15C54821C1B5713009868D1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E15C54811C1B5713009868D1 /* BoneAngle.app */,
+				E15C54951C1B5713009868D1 /* BoneAngleTests.xctest */,
+				E15C54A01C1B5713009868D1 /* BoneAngleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E15C54831C1B5713009868D1 /* BoneAngle */ = {
+			isa = PBXGroup;
+			children = (
+				E15C54841C1B5713009868D1 /* AppDelegate.swift */,
+				E15C54861C1B5713009868D1 /* ViewController.swift */,
+				E15C54881C1B5713009868D1 /* Main.storyboard */,
+				E15C548B1C1B5713009868D1 /* Assets.xcassets */,
+				E15C548D1C1B5713009868D1 /* LaunchScreen.storyboard */,
+				E15C54901C1B5713009868D1 /* Info.plist */,
+			);
+			path = BoneAngle;
+			sourceTree = "<group>";
+		};
+		E15C54981C1B5713009868D1 /* BoneAngleTests */ = {
+			isa = PBXGroup;
+			children = (
+				E15C54991C1B5713009868D1 /* BoneAngleTests.swift */,
+				E15C549B1C1B5713009868D1 /* Info.plist */,
+			);
+			path = BoneAngleTests;
+			sourceTree = "<group>";
+		};
+		E15C54A31C1B5713009868D1 /* BoneAngleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E15C54A41C1B5713009868D1 /* BoneAngleUITests.swift */,
+				E15C54A61C1B5713009868D1 /* Info.plist */,
+			);
+			path = BoneAngleUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E15C54801C1B5713009868D1 /* BoneAngle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E15C54A91C1B5713009868D1 /* Build configuration list for PBXNativeTarget "BoneAngle" */;
+			buildPhases = (
+				E15C547D1C1B5713009868D1 /* Sources */,
+				E15C547E1C1B5713009868D1 /* Frameworks */,
+				E15C547F1C1B5713009868D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BoneAngle;
+			productName = BoneAngle;
+			productReference = E15C54811C1B5713009868D1 /* BoneAngle.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E15C54941C1B5713009868D1 /* BoneAngleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E15C54AC1C1B5713009868D1 /* Build configuration list for PBXNativeTarget "BoneAngleTests" */;
+			buildPhases = (
+				E15C54911C1B5713009868D1 /* Sources */,
+				E15C54921C1B5713009868D1 /* Frameworks */,
+				E15C54931C1B5713009868D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E15C54971C1B5713009868D1 /* PBXTargetDependency */,
+			);
+			name = BoneAngleTests;
+			productName = BoneAngleTests;
+			productReference = E15C54951C1B5713009868D1 /* BoneAngleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E15C549F1C1B5713009868D1 /* BoneAngleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E15C54AF1C1B5713009868D1 /* Build configuration list for PBXNativeTarget "BoneAngleUITests" */;
+			buildPhases = (
+				E15C549C1C1B5713009868D1 /* Sources */,
+				E15C549D1C1B5713009868D1 /* Frameworks */,
+				E15C549E1C1B5713009868D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E15C54A21C1B5713009868D1 /* PBXTargetDependency */,
+			);
+			name = BoneAngleUITests;
+			productName = BoneAngleUITests;
+			productReference = E15C54A01C1B5713009868D1 /* BoneAngleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E15C54791C1B5713009868D1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Mac Watrous";
+				TargetAttributes = {
+					E15C54801C1B5713009868D1 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					E15C54941C1B5713009868D1 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = E15C54801C1B5713009868D1;
+					};
+					E15C549F1C1B5713009868D1 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = E15C54801C1B5713009868D1;
+					};
+				};
+			};
+			buildConfigurationList = E15C547C1C1B5713009868D1 /* Build configuration list for PBXProject "BoneAngle" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E15C54781C1B5713009868D1;
+			productRefGroup = E15C54821C1B5713009868D1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E15C54801C1B5713009868D1 /* BoneAngle */,
+				E15C54941C1B5713009868D1 /* BoneAngleTests */,
+				E15C549F1C1B5713009868D1 /* BoneAngleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E15C547F1C1B5713009868D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E15C548F1C1B5713009868D1 /* LaunchScreen.storyboard in Resources */,
+				E15C548C1C1B5713009868D1 /* Assets.xcassets in Resources */,
+				E15C548A1C1B5713009868D1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E15C54931C1B5713009868D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E15C549E1C1B5713009868D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E15C547D1C1B5713009868D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E15C54871C1B5713009868D1 /* ViewController.swift in Sources */,
+				E15C54851C1B5713009868D1 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E15C54911C1B5713009868D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E15C549A1C1B5713009868D1 /* BoneAngleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E15C549C1C1B5713009868D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E15C54A51C1B5713009868D1 /* BoneAngleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E15C54971C1B5713009868D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E15C54801C1B5713009868D1 /* BoneAngle */;
+			targetProxy = E15C54961C1B5713009868D1 /* PBXContainerItemProxy */;
+		};
+		E15C54A21C1B5713009868D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E15C54801C1B5713009868D1 /* BoneAngle */;
+			targetProxy = E15C54A11C1B5713009868D1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E15C54881C1B5713009868D1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E15C54891C1B5713009868D1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E15C548D1C1B5713009868D1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E15C548E1C1B5713009868D1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E15C54A71C1B5713009868D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E15C54A81C1B5713009868D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E15C54AA1C1B5713009868D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BoneAngle/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = beta.BoneAngle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E15C54AB1C1B5713009868D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BoneAngle/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = beta.BoneAngle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E15C54AD1C1B5713009868D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BoneAngleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = beta.BoneAngleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BoneAngle.app/BoneAngle";
+			};
+			name = Debug;
+		};
+		E15C54AE1C1B5713009868D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BoneAngleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = beta.BoneAngleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BoneAngle.app/BoneAngle";
+			};
+			name = Release;
+		};
+		E15C54B01C1B5713009868D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BoneAngleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = beta.BoneAngleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BoneAngle;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		E15C54B11C1B5713009868D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BoneAngleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = beta.BoneAngleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BoneAngle;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E15C547C1C1B5713009868D1 /* Build configuration list for PBXProject "BoneAngle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E15C54A71C1B5713009868D1 /* Debug */,
+				E15C54A81C1B5713009868D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E15C54A91C1B5713009868D1 /* Build configuration list for PBXNativeTarget "BoneAngle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E15C54AA1C1B5713009868D1 /* Debug */,
+				E15C54AB1C1B5713009868D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E15C54AC1C1B5713009868D1 /* Build configuration list for PBXNativeTarget "BoneAngleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E15C54AD1C1B5713009868D1 /* Debug */,
+				E15C54AE1C1B5713009868D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E15C54AF1C1B5713009868D1 /* Build configuration list for PBXNativeTarget "BoneAngleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E15C54B01C1B5713009868D1 /* Debug */,
+				E15C54B11C1B5713009868D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E15C54791C1B5713009868D1 /* Project object */;
+}
