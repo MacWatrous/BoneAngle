@@ -17,6 +17,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     @IBOutlet weak var line1: UIButton!
     @IBOutlet weak var line2: UIButton!
     @IBOutlet weak var angle: UILabel!
+    @IBOutlet weak var obtuseAngle: UILabel!
     var runCleanup1 = false
     var runCleanup2 = false
     var fired1 = false
@@ -39,7 +40,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        angle.text = "0"
+        angle.text = "Acute: 0"
+        obtuseAngle.text = "Obtuse: 0"
         imageView.image = UIImage(named:"background.jpg")
         picker.delegate = self
         self.view.backgroundColor = UIColor.blackColor()
@@ -51,6 +53,10 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         imageView.addGestureRecognizer(rotationGestureRecognizer)
         imageView.layer.anchorPoint = CGPointMake(0, 0)
         resetCords(nil)
+        points.append(CGPoint())
+        points.append(CGPoint())
+        points2.append(CGPoint())
+        points2.append(CGPoint())
     }
     
     @IBAction func cameraClick(sender: UIButton) {
@@ -106,18 +112,24 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     @IBAction func tapImage(sender: UITapGestureRecognizer) {
         bothFired = false
         
-        if runCleanup1 && newLine {
+        /*if runCleanup1 && newLine {
             points = []
             runCleanup1 = false
         }
         if runCleanup2 && newLiner {
             points2 = []
             runCleanup2 = false
-        }
+        }*/
         
         if sender.state == .Ended && taps < 2 && newLine == true {
+            if taps == 0 {
+                points[0] = sender.locationInView(view)
+            }
+            else if taps == 1 {
+                points[1] = sender.locationInView(view)
+            }
             taps++
-            points.append(sender.locationInView(view))
+            //points.append(sender.locationInView(view))
             if taps == 2 {
                 var path = UIBezierPath();
                 path.moveToPoint(CGPointMake(points[0].x, points[0].y));
@@ -155,8 +167,14 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         
         //Line2
         if sender.state == .Ended && taps2 < 2 && newLiner == true {
+            if taps2 == 0 {
+                points2[0] = sender.locationInView(view)
+            }
+            else if taps2 == 1 {
+                points2[1] = sender.locationInView(view)
+            }
             taps2++
-            points2.append(sender.locationInView(view))
+            //points2.append(sender.locationInView(view))
             if taps2 == 2 {
                 var path = UIBezierPath();
                 path.moveToPoint(CGPointMake(points2[0].x, points2[0].y));
@@ -192,22 +210,22 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         }
         if fired1 && fired2 {
             updateAngle()
-            points = []
-            points2 = []
+            //points = []
+            //points2 = []
             taps = 0
             taps2 = 0
             bothFired = true
         }
-        /*else if runCleanup1 && appear2 {
-            updateAngle()
-            points = []
-            runCleanup1 = false
+        //To do - figure out how to update 1 angle upon a line being fired
+            //requires both a line1 and line2 already on the screen
+        else if appear1 && appear2 {
+            if fired1 {
+                updateAngle()
+            }
+            else if fired2 {
+                updateAngle()
+            }
         }
-        else if runCleanup2 && appear1 {
-            updateAngle()
-            points2 = []
-            runCleanup2 = false
-        }*/
     }
     
     
@@ -219,6 +237,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         newLiner = true
     }
     
+    //TODO figure out if angle is acute or obtuse
+        //need an if statement testing for something
     func updateAngle(){
         fired1 = false
         fired2 = false
@@ -226,7 +246,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         var line2Slope = (points2[1].y-points2[0].y)/(points2[1].x - points2[0].x)
         var tanAngle = abs((line1Slope - line2Slope)/(1+line1Slope*line2Slope))
         var theAngle = atan(tanAngle)
-        angle.text = String(Double(theAngle)*(180/M_PI))
+        angle.text = "Accute: " + String(Double(theAngle)*(180/M_PI))
+        obtuseAngle.text = "Obtuse: " + String(180-Double(theAngle)*(180/M_PI))
     }
     
     func gestureRecognizer(gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWithGestureRecognizer otherGestureRecognizer: UIGestureRecognizer) -> Bool {

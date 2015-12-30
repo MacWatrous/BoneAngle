@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E11E8A681C338F05003B7C90 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E11E8A661C338F05003B7C90 /* Main_iPad.storyboard */; };
 		E12D02611C21FF2100714DEF /* DrawLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12D02601C21FF2100714DEF /* DrawLine.swift */; };
 		E15C54851C1B5713009868D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15C54841C1B5713009868D1 /* AppDelegate.swift */; };
 		E15C54871C1B5713009868D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15C54861C1B5713009868D1 /* ViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E11E8A671C338F05003B7C90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		E12D02601C21FF2100714DEF /* DrawLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawLine.swift; sourceTree = "<group>"; };
 		E15C54811C1B5713009868D1 /* BoneAngle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoneAngle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E15C54841C1B5713009868D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				E15C54841C1B5713009868D1 /* AppDelegate.swift */,
 				E15C54861C1B5713009868D1 /* ViewController.swift */,
 				E15C54881C1B5713009868D1 /* Main.storyboard */,
+				E11E8A661C338F05003B7C90 /* Main_iPad.storyboard */,
 				E15C548B1C1B5713009868D1 /* Assets.xcassets */,
 				E15C548D1C1B5713009868D1 /* LaunchScreen.storyboard */,
 				E15C54901C1B5713009868D1 /* Info.plist */,
@@ -237,6 +240,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E15C548F1C1B5713009868D1 /* LaunchScreen.storyboard in Resources */,
+				E11E8A681C338F05003B7C90 /* Main_iPad.storyboard in Resources */,
 				E15C548C1C1B5713009868D1 /* Assets.xcassets in Resources */,
 				E15C548A1C1B5713009868D1 /* Main.storyboard in Resources */,
 			);
@@ -301,6 +305,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		E11E8A661C338F05003B7C90 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E11E8A671C338F05003B7C90 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
 		E15C54881C1B5713009868D1 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -412,6 +424,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = beta.BoneAngle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -424,6 +437,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = beta.BoneAngle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
