@@ -18,6 +18,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     @IBOutlet weak var line2: UIButton!
     @IBOutlet weak var angle: UILabel!
     @IBOutlet weak var obtuseAngle: UILabel!
+    @IBOutlet weak var ImageContainer: UIView!
     var runCleanup1 = false
     var runCleanup2 = false
     var fired1 = false
@@ -40,23 +41,29 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        picker.delegate = self
         angle.text = "Acute: 0"
         obtuseAngle.text = "Obtuse: 0"
-        imageView.image = UIImage(named:"background.jpg")
-        picker.delegate = self
-        self.view.backgroundColor = UIColor.blackColor()
         var panGestureRecognizer = UIPanGestureRecognizer(target: self, action: "panImage:")
         var rotationGestureRecognizer = UIRotationGestureRecognizer(target: self, action: "rotateImage:")
         panGestureRecognizer.delegate = self;
         rotationGestureRecognizer.delegate = self;
         imageView.addGestureRecognizer(panGestureRecognizer)
         imageView.addGestureRecognizer(rotationGestureRecognizer)
+        points.append(CGPoint())
+        points.append(CGPoint())
+        points2.append(CGPoint())
+        points2.append(CGPoint())
+        
+    }
+    
+    override func viewDidLayoutSubviews() {
+        self.view.viewWithTag(3)?.backgroundColor = UIColor.blackColor()
+        super.viewDidLayoutSubviews()
+        imageView.image = UIImage(named:"background.jpg")
         imageView.layer.anchorPoint = CGPointMake(0, 0)
         resetCords(nil)
-        points.append(CGPoint())
-        points.append(CGPoint())
-        points2.append(CGPoint())
-        points2.append(CGPoint())
+        ImageContainer.translatesAutoresizingMaskIntoConstraints = true
     }
     
     @IBAction func cameraClick(sender: UIButton) {
